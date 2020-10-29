@@ -1,0 +1,1 @@
+# stm32l432kc_freertos_usart_template
