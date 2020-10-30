@@ -62,7 +62,7 @@ int main(void)
 
   /* Create the thread(s) */
   xTaskCreate(Task1, "Task1", configMINIMAL_STACK_SIZE, NULL, 0, &Task1Handle);
-	
+
   /* Start scheduler */
   vTaskStartScheduler();
   
@@ -83,10 +83,9 @@ static void Task1(void * argument)
 {
   while(1)
   {
-		printf("Task1\n\r");
-		
+    printf("Task1\n\r");
     vTaskDelay(1000);
-  } 
+  }
 }
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
@@ -104,9 +103,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
  */
 int fputc(int ch, FILE *f)
 {
-	 HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, 0xFFFF);
-
-	 return ch;
+  HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, 0xFFFF);
+  return ch;
 }
 
 /**
