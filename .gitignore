@@ -1,0 +1,8 @@
+# Ignoring the next folders:
+/Drivers/
+/MDK-ARM/
+/Middlewares/
+
+# Ignoring the next files:
+*.mxproject
+*.ioc
