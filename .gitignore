@@ -2,6 +2,7 @@
 /Drivers/
 /MDK-ARM/
 /Middlewares/
+/.vscode/
 
 # Ignoring the next files:
 *.mxproject
